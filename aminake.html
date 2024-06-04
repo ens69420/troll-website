@@ -73,14 +73,15 @@
 
     <img id="image" src="img/sowwyz.jpg" alt="ensbabapro ">
 
-    <audio id="audio" src="/sao.mp3"></audio>
+   <audio controls="controls" loop="loop">
 
-    <script>
-        const audio = document.getElementById('audio');
-        audio.currentTime = 0;
-        audio.play();
-        audio.loop();
+<source src="sao.ogg" type="audio/ogg">
 
+<source src="sao.mp3" type="audio/mp3">
+
+Tarayıcınız audio etiketini desteklememektedir.
+
+</audio>
 
         window.onload = function () {
             const pre = document.querySelector('pre');
